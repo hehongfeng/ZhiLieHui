@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C8FADED0EAF03B91B49A346 /* Pods_ZhiLieHui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F0CA91FCDCF4660D72745A /* Pods_ZhiLieHui.framework */; };
 		EC0374A1205660FE00FEE3B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0374A0205660FE00FEE3B0 /* AppDelegate.swift */; };
 		EC0374A3205660FE00FEE3B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0374A2205660FE00FEE3B0 /* ViewController.swift */; };
 		EC0374A6205660FE00FEE3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0374A4205660FE00FEE3B0 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48986AD367CC80FF56889EE0 /* Pods-ZhiLieHui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiLieHui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhiLieHui/Pods-ZhiLieHui.debug.xcconfig"; sourceTree = "<group>"; };
+		BBB9EEA8E206B5E16F6C309C /* Pods-ZhiLieHui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiLieHui.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhiLieHui/Pods-ZhiLieHui.release.xcconfig"; sourceTree = "<group>"; };
+		C9F0CA91FCDCF4660D72745A /* Pods_ZhiLieHui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhiLieHui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC03749D205660FE00FEE3B0 /* ZhiLieHui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhiLieHui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0374A0205660FE00FEE3B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC0374A2205660FE00FEE3B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8FADED0EAF03B91B49A346 /* Pods_ZhiLieHui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		110568537581DEF441AF821F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9F0CA91FCDCF4660D72745A /* Pods_ZhiLieHui.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28237532032E02131EDAD89F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48986AD367CC80FF56889EE0 /* Pods-ZhiLieHui.debug.xcconfig */,
+				BBB9EEA8E206B5E16F6C309C /* Pods-ZhiLieHui.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC037494205660FE00FEE3B0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				EC0374B7205660FE00FEE3B0 /* ZhiLieHuiTests */,
 				EC0374C2205660FE00FEE3B0 /* ZhiLieHuiUITests */,
 				EC03749E205660FE00FEE3B0 /* Products */,
+				28237532032E02131EDAD89F /* Pods */,
+				110568537581DEF441AF821F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC0374C8205660FE00FEE3B0 /* Build configuration list for PBXNativeTarget "ZhiLieHui" */;
 			buildPhases = (
+				462213AC9C54FA1652391854 /* [CP] Check Pods Manifest.lock */,
 				EC037499205660FE00FEE3B0 /* Sources */,
 				EC03749A205660FE00FEE3B0 /* Frameworks */,
 				EC03749B205660FE00FEE3B0 /* Resources */,
+				694172D40DFE59E4A4317B8B /* [CP] Embed Pods Frameworks */,
+				03C9F403BF2DF7B946E3FDA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03C9F403BF2DF7B946E3FDA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhiLieHui/Pods-ZhiLieHui-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		462213AC9C54FA1652391854 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZhiLieHui-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		694172D40DFE59E4A4317B8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZhiLieHui/Pods-ZhiLieHui-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhiLieHui/Pods-ZhiLieHui-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC037499205660FE00FEE3B0 /* Sources */ = {
@@ -428,6 +515,7 @@
 		};
 		EC0374C9205660FE00FEE3B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48986AD367CC80FF56889EE0 /* Pods-ZhiLieHui.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +531,7 @@
 		};
 		EC0374CA205660FE00FEE3B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB9EEA8E206B5E16F6C309C /* Pods-ZhiLieHui.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

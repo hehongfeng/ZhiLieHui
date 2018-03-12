@@ -1,0 +1,6 @@
+framework module Pods_ZhiLieHui {
+  umbrella header "Pods-ZhiLieHui-umbrella.h"
+
+  export *
+  module * { export * }
+}
