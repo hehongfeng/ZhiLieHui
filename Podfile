@@ -6,8 +6,9 @@ use_frameworks!
 target 'ZhiLieHui' do
  pod 'SDWebImage'
  pod 'MJRefresh'
- pod 'SnapKit'
  pod 'Alamofire'
+ pod 'SwiftyJSON'
+ pod 'Reachability'
 end
 post_install do |installer|
       installer.pods_project.targets.each do |target|

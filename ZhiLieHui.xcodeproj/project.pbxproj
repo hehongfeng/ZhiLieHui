@@ -16,6 +16,12 @@
 		EC0374AE205660FE00FEE3B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0374AC205660FE00FEE3B0 /* LaunchScreen.storyboard */; };
 		EC0374B9205660FE00FEE3B0 /* ZhiLieHuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0374B8205660FE00FEE3B0 /* ZhiLieHuiTests.swift */; };
 		EC0374C4205660FE00FEE3B0 /* ZhiLieHuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0374C3205660FE00FEE3B0 /* ZhiLieHuiUITests.swift */; };
+		EC089BF320575E2000FEA703 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF220575E2000FEA703 /* Login.storyboard */; };
+		EC089BF520575ED900FEA703 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF420575ED900FEA703 /* Setting.storyboard */; };
+		EC089BF720575F4D00FEA703 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF620575F4D00FEA703 /* Home.storyboard */; };
+		EC089BF9205761AA00FEA703 /* Apply.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF8205761AA00FEA703 /* Apply.storyboard */; };
+		EC0929AF2056724C00ED7421 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0929AE2056724C00ED7421 /* Networking.swift */; };
+		ECDDCD4D205683A10019B7A5 /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		EC0374BF205660FE00FEE3B0 /* ZhiLieHuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhiLieHuiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0374C3205660FE00FEE3B0 /* ZhiLieHuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhiLieHuiUITests.swift; sourceTree = "<group>"; };
 		EC0374C5205660FE00FEE3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC089BF220575E2000FEA703 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		EC089BF420575ED900FEA703 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		EC089BF620575F4D00FEA703 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EC089BF8205761AA00FEA703 /* Apply.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Apply.storyboard; sourceTree = "<group>"; };
+		EC0929AE2056724C00ED7421 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +135,10 @@
 		EC03749F205660FE00FEE3B0 /* ZhiLieHui */ = {
 			isa = PBXGroup;
 			children = (
+				EC0929AA20566ED600ED7421 /* Modules */,
+				EC0929AD20566FC100ED7421 /* DataModle */,
+				EC0929AC20566FA800ED7421 /* Networking */,
+				EC0929AB20566EEA00ED7421 /* CommonUI */,
 				EC0374A0205660FE00FEE3B0 /* AppDelegate.swift */,
 				EC0374A2205660FE00FEE3B0 /* ViewController.swift */,
 				EC0374A4205660FE00FEE3B0 /* Main.storyboard */,
@@ -150,6 +166,72 @@
 				EC0374C5205660FE00FEE3B0 /* Info.plist */,
 			);
 			path = ZhiLieHuiUITests;
+			sourceTree = "<group>";
+		};
+		EC0929AA20566ED600ED7421 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ECDDCD4F2056A8B50019B7A5 /* Home */,
+				ECDDCD512056A8D90019B7A5 /* Apply */,
+				ECDDCD502056A8C20019B7A5 /* Setting */,
+				ECDDCD4E2056A8A80019B7A5 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EC0929AB20566EEA00ED7421 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		EC0929AC20566FA800ED7421 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EC0929AE2056724C00ED7421 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EC0929AD20566FC100ED7421 /* DataModle */ = {
+			isa = PBXGroup;
+			children = (
+				ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */,
+			);
+			path = DataModle;
+			sourceTree = "<group>";
+		};
+		ECDDCD4E2056A8A80019B7A5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EC089BF220575E2000FEA703 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ECDDCD4F2056A8B50019B7A5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC089BF620575F4D00FEA703 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ECDDCD502056A8C20019B7A5 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				EC089BF420575ED900FEA703 /* Setting.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		ECDDCD512056A8D90019B7A5 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				EC089BF8205761AA00FEA703 /* Apply.storyboard */,
+			);
+			path = Apply;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +344,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC089BF320575E2000FEA703 /* Login.storyboard in Resources */,
 				EC0374AE205660FE00FEE3B0 /* LaunchScreen.storyboard in Resources */,
+				EC089BF520575ED900FEA703 /* Setting.storyboard in Resources */,
+				EC089BF720575F4D00FEA703 /* Home.storyboard in Resources */,
 				EC0374AB205660FE00FEE3B0 /* Assets.xcassets in Resources */,
 				EC0374A6205660FE00FEE3B0 /* Main.storyboard in Resources */,
+				EC089BF9205761AA00FEA703 /* Apply.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,15 +413,17 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZhiLieHui/Pods-ZhiLieHui-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,9 +437,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDDCD4D205683A10019B7A5 /* ApplicationData.swift in Sources */,
 				EC0374A3205660FE00FEE3B0 /* ViewController.swift in Sources */,
 				EC0374A1205660FE00FEE3B0 /* AppDelegate.swift in Sources */,
 				EC0374A9205660FE00FEE3B0 /* ZhiLieHui.xcdatamodeld in Sources */,
+				EC0929AF2056724C00ED7421 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,23 +1,26 @@
 PODS:
   - Alamofire (4.4.0)
   - MJRefresh (3.1.12)
+  - Reachability (3.2)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
   - MJRefresh
+  - Reachability
   - SDWebImage
-  - SnapKit
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 48c6890978405adfd7afc02e945f8839cc9eb279
+PODFILE CHECKSUM: 0954fcfe2e68aa10ee3debea0b1cf37b74e0e904
 
 COCOAPODS: 1.3.1
