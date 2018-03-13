@@ -20,6 +20,8 @@
 		EC089BF520575ED900FEA703 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF420575ED900FEA703 /* Setting.storyboard */; };
 		EC089BF9205761AA00FEA703 /* Apply.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF8205761AA00FEA703 /* Apply.storyboard */; };
 		EC0929AF2056724C00ED7421 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0929AE2056724C00ED7421 /* Networking.swift */; };
+		EC3D99B52057DD5B009B9669 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D99B32057DD5B009B9669 /* User+CoreDataClass.swift */; };
+		EC3D99B62057DD5B009B9669 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D99B42057DD5B009B9669 /* User+CoreDataProperties.swift */; };
 		EC4B94792057B86500D67B52 /* Serve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B94782057B86500D67B52 /* Serve.storyboard */; };
 		EC4B947C2057B93A00D67B52 /* Recruit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B947B2057B93A00D67B52 /* Recruit.storyboard */; };
 		EC4B947E2057BC1F00D67B52 /* TCTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B947D2057BC1F00D67B52 /* TCTabBarViewController.swift */; };
@@ -69,6 +71,9 @@
 		EC089BF420575ED900FEA703 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		EC089BF8205761AA00FEA703 /* Apply.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Apply.storyboard; sourceTree = "<group>"; };
 		EC0929AE2056724C00ED7421 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		EC3D99B32057DD5B009B9669 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EC3D99B42057DD5B009B9669 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EC3D99B72057EB96009B9669 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		EC4B94782057B86500D67B52 /* Serve.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Serve.storyboard; sourceTree = "<group>"; };
 		EC4B947B2057B93A00D67B52 /* Recruit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recruit.storyboard; sourceTree = "<group>"; };
 		EC4B947D2057BC1F00D67B52 /* TCTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTabBarViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +205,7 @@
 				EC4B947F2057BD0300D67B52 /* String+extension.swift */,
 				EC4B94812057BD0300D67B52 /* StyleKit.swift */,
 				EC4B94802057BD0300D67B52 /* UIColor+extension.swift */,
+				EC3D99B72057EB96009B9669 /* BridgeHeader.h */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -215,6 +221,8 @@
 		EC0929AD20566FC100ED7421 /* DataModle */ = {
 			isa = PBXGroup;
 			children = (
+				EC3D99B32057DD5B009B9669 /* User+CoreDataClass.swift */,
+				EC3D99B42057DD5B009B9669 /* User+CoreDataProperties.swift */,
 				ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */,
 			);
 			path = DataModle;
@@ -477,8 +485,10 @@
 				ECDDCD4D205683A10019B7A5 /* ApplicationData.swift in Sources */,
 				EC4B947E2057BC1F00D67B52 /* TCTabBarViewController.swift in Sources */,
 				EC0374A3205660FE00FEE3B0 /* ViewController.swift in Sources */,
+				EC3D99B52057DD5B009B9669 /* User+CoreDataClass.swift in Sources */,
 				EC0374A1205660FE00FEE3B0 /* AppDelegate.swift in Sources */,
 				EC0374A9205660FE00FEE3B0 /* ZhiLieHui.xcdatamodeld in Sources */,
+				EC3D99B62057DD5B009B9669 /* User+CoreDataProperties.swift in Sources */,
 				EC4B94822057BD0400D67B52 /* String+extension.swift in Sources */,
 				EC0929AF2056724C00ED7421 /* Networking.swift in Sources */,
 				EC4B94832057BD0400D67B52 /* UIColor+extension.swift in Sources */,
@@ -654,6 +664,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiliehui.ZhiLieHui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ZhiLieHui/CommonUI/BridgeHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -670,6 +681,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiliehui.ZhiLieHui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ZhiLieHui/CommonUI/BridgeHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

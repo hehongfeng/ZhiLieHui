@@ -15,7 +15,7 @@ private let sharedManager = ApplicationData()
 
 class ApplicationData: NSObject {
     //创建数据处理单例
-    class var sharedInstances: ApplicationData {
+    class var sharedInstance: ApplicationData {
         return sharedManager
     }
     
