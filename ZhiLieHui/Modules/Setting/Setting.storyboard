@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gor-2Q-LZB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="auo-ly-8fz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,28 +9,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--首页-->
-        <scene sceneID="FW9-0M-EAO">
+        <!--我的-->
+        <scene sceneID="dVd-u3-fm9">
             <objects>
-                <navigationController id="Gor-2Q-LZB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" id="aZy-Fj-m5p"/>
+                <navigationController id="auo-ly-8fz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="tab_personal_n" selectedImage="tab_personal_s" id="G6c-zW-1aA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AEN-VT-9sz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Msm-a5-FqF">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="S7A-oe-Txf" kind="relationship" relationship="rootViewController" id="Ybx-AU-zp1"/>
+                        <segue destination="S7A-oe-Txf" kind="relationship" relationship="rootViewController" id="OyC-oT-5UI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SxM-Qz-E99" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLp-iD-Qof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1772" y="92"/>
+            <point key="canvasLocation" x="-2533" y="301"/>
         </scene>
-        <!--View Controller-->
+        <!--我的-->
         <scene sceneID="KJv-61-4x5">
             <objects>
-                <viewController id="S7A-oe-Txf" sceneMemberID="viewController">
+                <viewController title="我的" id="S7A-oe-Txf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sGd-gX-Lde">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="343-mp-Pf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1105" y="91"/>
+            <point key="canvasLocation" x="-1844" y="301"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_personal_n" width="24" height="24"/>
+        <image name="tab_personal_s" width="24" height="24"/>
+    </resources>
 </document>

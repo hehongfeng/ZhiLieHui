@@ -18,9 +18,15 @@
 		EC0374C4205660FE00FEE3B0 /* ZhiLieHuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0374C3205660FE00FEE3B0 /* ZhiLieHuiUITests.swift */; };
 		EC089BF320575E2000FEA703 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF220575E2000FEA703 /* Login.storyboard */; };
 		EC089BF520575ED900FEA703 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF420575ED900FEA703 /* Setting.storyboard */; };
-		EC089BF720575F4D00FEA703 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF620575F4D00FEA703 /* Home.storyboard */; };
 		EC089BF9205761AA00FEA703 /* Apply.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC089BF8205761AA00FEA703 /* Apply.storyboard */; };
 		EC0929AF2056724C00ED7421 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0929AE2056724C00ED7421 /* Networking.swift */; };
+		EC4B94792057B86500D67B52 /* Serve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B94782057B86500D67B52 /* Serve.storyboard */; };
+		EC4B947C2057B93A00D67B52 /* Recruit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B947B2057B93A00D67B52 /* Recruit.storyboard */; };
+		EC4B947E2057BC1F00D67B52 /* TCTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B947D2057BC1F00D67B52 /* TCTabBarViewController.swift */; };
+		EC4B94822057BD0400D67B52 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B947F2057BD0300D67B52 /* String+extension.swift */; };
+		EC4B94832057BD0400D67B52 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B94802057BD0300D67B52 /* UIColor+extension.swift */; };
+		EC4B94842057BD0400D67B52 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B94812057BD0300D67B52 /* StyleKit.swift */; };
+		EC4B94862057C37800D67B52 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B94852057C37800D67B52 /* Home.storyboard */; };
 		ECDDCD4D205683A10019B7A5 /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,9 +67,15 @@
 		EC0374C5205660FE00FEE3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC089BF220575E2000FEA703 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EC089BF420575ED900FEA703 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
-		EC089BF620575F4D00FEA703 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EC089BF8205761AA00FEA703 /* Apply.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Apply.storyboard; sourceTree = "<group>"; };
 		EC0929AE2056724C00ED7421 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		EC4B94782057B86500D67B52 /* Serve.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Serve.storyboard; sourceTree = "<group>"; };
+		EC4B947B2057B93A00D67B52 /* Recruit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recruit.storyboard; sourceTree = "<group>"; };
+		EC4B947D2057BC1F00D67B52 /* TCTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTabBarViewController.swift; sourceTree = "<group>"; };
+		EC4B947F2057BD0300D67B52 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		EC4B94802057BD0300D67B52 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		EC4B94812057BD0300D67B52 /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
+		EC4B94852057C37800D67B52 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				ECDDCD4F2056A8B50019B7A5 /* Home */,
+				EC4B947A2057B92100D67B52 /* Recruit */,
+				EC4B94772057B84400D67B52 /* Serve */,
 				ECDDCD512056A8D90019B7A5 /* Apply */,
 				ECDDCD502056A8C20019B7A5 /* Setting */,
 				ECDDCD4E2056A8A80019B7A5 /* Login */,
@@ -182,6 +196,10 @@
 		EC0929AB20566EEA00ED7421 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				EC4B947D2057BC1F00D67B52 /* TCTabBarViewController.swift */,
+				EC4B947F2057BD0300D67B52 /* String+extension.swift */,
+				EC4B94812057BD0300D67B52 /* StyleKit.swift */,
+				EC4B94802057BD0300D67B52 /* UIColor+extension.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -202,6 +220,22 @@
 			path = DataModle;
 			sourceTree = "<group>";
 		};
+		EC4B94772057B84400D67B52 /* Serve */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B94782057B86500D67B52 /* Serve.storyboard */,
+			);
+			path = Serve;
+			sourceTree = "<group>";
+		};
+		EC4B947A2057B92100D67B52 /* Recruit */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B947B2057B93A00D67B52 /* Recruit.storyboard */,
+			);
+			path = Recruit;
+			sourceTree = "<group>";
+		};
 		ECDDCD4E2056A8A80019B7A5 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +247,7 @@
 		ECDDCD4F2056A8B50019B7A5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EC089BF620575F4D00FEA703 /* Home.storyboard */,
+				EC4B94852057C37800D67B52 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -347,7 +381,9 @@
 				EC089BF320575E2000FEA703 /* Login.storyboard in Resources */,
 				EC0374AE205660FE00FEE3B0 /* LaunchScreen.storyboard in Resources */,
 				EC089BF520575ED900FEA703 /* Setting.storyboard in Resources */,
-				EC089BF720575F4D00FEA703 /* Home.storyboard in Resources */,
+				EC4B94862057C37800D67B52 /* Home.storyboard in Resources */,
+				EC4B94792057B86500D67B52 /* Serve.storyboard in Resources */,
+				EC4B947C2057B93A00D67B52 /* Recruit.storyboard in Resources */,
 				EC0374AB205660FE00FEE3B0 /* Assets.xcassets in Resources */,
 				EC0374A6205660FE00FEE3B0 /* Main.storyboard in Resources */,
 				EC089BF9205761AA00FEA703 /* Apply.storyboard in Resources */,
@@ -437,11 +473,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4B94842057BD0400D67B52 /* StyleKit.swift in Sources */,
 				ECDDCD4D205683A10019B7A5 /* ApplicationData.swift in Sources */,
+				EC4B947E2057BC1F00D67B52 /* TCTabBarViewController.swift in Sources */,
 				EC0374A3205660FE00FEE3B0 /* ViewController.swift in Sources */,
 				EC0374A1205660FE00FEE3B0 /* AppDelegate.swift in Sources */,
 				EC0374A9205660FE00FEE3B0 /* ZhiLieHui.xcdatamodeld in Sources */,
+				EC4B94822057BD0400D67B52 /* String+extension.swift in Sources */,
 				EC0929AF2056724C00ED7421 /* Networking.swift in Sources */,
+				EC4B94832057BD0400D67B52 /* UIColor+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g4m-Uf-qjL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--服务-->
+        <scene sceneID="q1t-A6-FCa">
+            <objects>
+                <navigationController id="g4m-Uf-qjL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="服务" image="tab_serive_n" selectedImage="tab_serive_s" id="MRe-IN-oWO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jr7-hk-FKg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YaA-6F-eJc" kind="relationship" relationship="rootViewController" id="D3m-zu-G9k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeh-k0-1t9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2108" y="-38"/>
+        </scene>
+        <!--服务-->
+        <scene sceneID="evP-4P-xGf">
+            <objects>
+                <viewController title="服务" id="YaA-6F-eJc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v4Z-Re-Qey">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QAE-R8-8a8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lei-sk-fPa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMl-X5-Mhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1380" y="-38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_serive_n" width="24" height="24"/>
+        <image name="tab_serive_s" width="24" height="24"/>
+    </resources>
+</document>
