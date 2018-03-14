@@ -19,6 +19,15 @@ class ApplicationData: NSObject {
         return sharedManager
     }
     
+    //user related
+    var currentUser:User? {
+        didSet {
+            let uId = currentUser?.uid
+            UserDefaults.standard.set(uId, forKey: "defaultUserId")
+            UserDefaults.standard.synchronize()
+        }
+    }
+    
     private let dataModel:NSManagedObjectModel!
     private let context:NSManagedObjectContext!
     private let storeCoordinator:NSPersistentStoreCoordinator!
@@ -160,5 +169,13 @@ extension ApplicationData{
             }
         }
         return (false,"网络请求失败")
+    }
+}
+extension ApplicationData{
+    func userDidLogin() -> Bool {
+        if currentUser != nil{
+            return true
+        }
+        return false
     }
 }

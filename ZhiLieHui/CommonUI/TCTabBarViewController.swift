@@ -27,12 +27,28 @@ class TCTabBarViewController: UITabBarController {
 //                item.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:StyleKit.navigationBarTintColor], for: UIControlState.selected)
 //            }
 //        }
-        self.delegate = self as? UITabBarControllerDelegate
+        
+        if ApplicationData.sharedInstance.userDidLogin() == false {
+            showLogin()
+        }
+        self.delegate = self
         
         self.updateTabsBaseOnUserStatus()
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    func showLogin(){
+        DispatchQueue.main.async {
+            for vc in (self.viewControllers as? [UINavigationController])! {
+                vc.popToRootViewController(animated: false)
+            }
+            
+            self.selectedIndex = 0
+            self.performSegue(withIdentifier: "startToLogin", sender: nil)
+        }
+        
     }
     
     func updateTabsBaseOnUserStatus() {
@@ -65,14 +81,26 @@ class TCTabBarViewController: UITabBarController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   
+        if segue.identifier == "startToLogin"{
+            guard let dest = segue.destination as? UINavigationController else{return}
+            guard let login = dest.viewControllers.first as? LoginViewController else{return}
+            login.navigationController?.navigationBar.isHidden = true
+        }
     }
-    */
+}
 
+extension TCTabBarViewController:UITabBarControllerDelegate{
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if ApplicationData.sharedInstance.userDidLogin() {
+            return true
+        }
+        showLogin()
+        return false
+    }
 }

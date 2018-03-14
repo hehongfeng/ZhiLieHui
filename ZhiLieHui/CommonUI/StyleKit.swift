@@ -32,6 +32,7 @@ public class StyleKit: NSObject {
         
         static var blue1 = UIColor(hexString: "#1A3241")
         static var blue2 = UIColor(hexString: "#F2F2F5")
+        static var blue3 = UIColor(hexString:"#2D9FFF")
 
         
         
@@ -39,9 +40,14 @@ public class StyleKit: NSObject {
         
         static var black1 = UIColor(hexString: "#000000")
         static var black2 = UIColor(hexString: "#000000bc")
+        static var black3 = UIColor(hexString: "#838685")
+
+        
     }
     public class var barButtonColor: UIColor { return Cache.white1 }
     public class var tabBarTintColor: UIColor {return Cache.green2 }
     public class var navigationBarTintColor: UIColor { return Cache.blue2 }
     public class var navigationBarTitleTextAttributesColor:UIColor { return Cache.white1 }
+    public class var buttonColor:UIColor {return Cache.blue3}
+    public class var buttonTextColor:UIColor {return Cache.black3}    
 }

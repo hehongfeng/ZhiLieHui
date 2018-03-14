@@ -29,6 +29,7 @@
 		EC4B94832057BD0400D67B52 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B94802057BD0300D67B52 /* UIColor+extension.swift */; };
 		EC4B94842057BD0400D67B52 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B94812057BD0300D67B52 /* StyleKit.swift */; };
 		EC4B94862057C37800D67B52 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B94852057C37800D67B52 /* Home.storyboard */; };
+		ECCC97412058B25700F0413F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC97402058B25700F0413F /* LoginViewController.swift */; };
 		ECDDCD4D205683A10019B7A5 /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		EC4B94802057BD0300D67B52 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		EC4B94812057BD0300D67B52 /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
 		EC4B94852057C37800D67B52 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		ECCC97402058B25700F0413F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				EC089BF220575E2000FEA703 /* Login.storyboard */,
+				ECCC97402058B25700F0413F /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCC97412058B25700F0413F /* LoginViewController.swift in Sources */,
 				EC4B94842057BD0400D67B52 /* StyleKit.swift in Sources */,
 				ECDDCD4D205683A10019B7A5 /* ApplicationData.swift in Sources */,
 				EC4B947E2057BC1F00D67B52 /* TCTabBarViewController.swift in Sources */,
