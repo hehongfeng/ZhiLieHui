@@ -41,9 +41,9 @@ class LoginViewController: UIViewController {
     
     func setUI(){
         loginButton.layer.masksToBounds = true
-        loginButton.layer.cornerRadius = 15
+        loginButton.layer.cornerRadius = 25
         registerButton.layer.masksToBounds = true
-        registerButton.layer.cornerRadius = 15
+        registerButton.layer.cornerRadius = 25
         registerButton.layer.borderWidth = 1
         registerButton.layer.borderColor = StyleKit.buttonColor.cgColor
     }

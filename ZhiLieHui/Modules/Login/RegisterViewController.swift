@@ -10,10 +10,19 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     var role = String()
+    @IBOutlet weak var verificationBtn: UIButton!
+    @IBOutlet weak var enterBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "手机号注册"
+        setUI()
         // Do any additional setup after loading the view.
+    }
+    
+    func setUI(){
+        verificationBtn.layer.masksToBounds = true
+        verificationBtn.layer.cornerRadius = 13
+        enterBtn.layer.masksToBounds = true
+        enterBtn.layer.cornerRadius = 5
     }
 
     override func didReceiveMemoryWarning() {
