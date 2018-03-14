@@ -25,6 +25,20 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if navigationItem.backBarButtonItem == nil{
+         let back = UIBarButtonItem()
+            back.title = nil
+            self.navigationItem.backBarButtonItem = back
+        }
+    }
+    
     func setUI(){
         loginButton.layer.masksToBounds = true
         loginButton.layer.cornerRadius = 15
@@ -39,15 +53,15 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func register(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "pushToRoleSelect", sender: nil)
     }
-    */
+    
+  
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+    }
+ 
 
 }

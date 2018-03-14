@@ -30,6 +30,9 @@
 		EC4B94842057BD0400D67B52 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B94812057BD0300D67B52 /* StyleKit.swift */; };
 		EC4B94862057C37800D67B52 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B94852057C37800D67B52 /* Home.storyboard */; };
 		ECCC97412058B25700F0413F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC97402058B25700F0413F /* LoginViewController.swift */; };
+		ECCC97432059032500F0413F /* RoleSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC97422059032500F0413F /* RoleSelectViewController.swift */; };
+		ECCC974520590C2000F0413F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC974420590C2000F0413F /* RegisterViewController.swift */; };
+		ECCC97472059173F00F0413F /* TCNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC97462059173F00F0413F /* TCNavigationViewController.swift */; };
 		ECDDCD4D205683A10019B7A5 /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +86,9 @@
 		EC4B94812057BD0300D67B52 /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
 		EC4B94852057C37800D67B52 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		ECCC97402058B25700F0413F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ECCC97422059032500F0413F /* RoleSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectViewController.swift; sourceTree = "<group>"; };
+		ECCC974420590C2000F0413F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		ECCC97462059173F00F0413F /* TCNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCNavigationViewController.swift; sourceTree = "<group>"; };
 		ECDDCD4C205683A10019B7A5 /* ApplicationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				EC4B947D2057BC1F00D67B52 /* TCTabBarViewController.swift */,
+				ECCC97462059173F00F0413F /* TCNavigationViewController.swift */,
 				EC4B947F2057BD0300D67B52 /* String+extension.swift */,
 				EC4B94812057BD0300D67B52 /* StyleKit.swift */,
 				EC4B94802057BD0300D67B52 /* UIColor+extension.swift */,
@@ -251,6 +258,8 @@
 			children = (
 				EC089BF220575E2000FEA703 /* Login.storyboard */,
 				ECCC97402058B25700F0413F /* LoginViewController.swift */,
+				ECCC97422059032500F0413F /* RoleSelectViewController.swift */,
+				ECCC974420590C2000F0413F /* RegisterViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -489,9 +498,12 @@
 				ECDDCD4D205683A10019B7A5 /* ApplicationData.swift in Sources */,
 				EC4B947E2057BC1F00D67B52 /* TCTabBarViewController.swift in Sources */,
 				EC0374A3205660FE00FEE3B0 /* ViewController.swift in Sources */,
+				ECCC97472059173F00F0413F /* TCNavigationViewController.swift in Sources */,
 				EC3D99B52057DD5B009B9669 /* User+CoreDataClass.swift in Sources */,
 				EC0374A1205660FE00FEE3B0 /* AppDelegate.swift in Sources */,
 				EC0374A9205660FE00FEE3B0 /* ZhiLieHui.xcdatamodeld in Sources */,
+				ECCC97432059032500F0413F /* RoleSelectViewController.swift in Sources */,
+				ECCC974520590C2000F0413F /* RegisterViewController.swift in Sources */,
 				EC3D99B62057DD5B009B9669 /* User+CoreDataProperties.swift in Sources */,
 				EC4B94822057BD0400D67B52 /* String+extension.swift in Sources */,
 				EC0929AF2056724C00ED7421 /* Networking.swift in Sources */,
